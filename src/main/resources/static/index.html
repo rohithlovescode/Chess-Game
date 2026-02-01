@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Socket Chess</title>
+    <link href="css/chessboard.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        #board {
+            max-width: 400px;
+        }
+
+    </style>
+</head>
+<body>
+<div id="main-content" class="container">
+    <h2>Socket Chess</h2>
+    <form class="form-inline">
+        <div class="form-group">
+            <button id="connect" class="btn btn-primary" type="submit">Play!</button>
+            <button id="disconnect" class="btn btn-danger" type="submit" disabled="disabled">Disconnect</button>
+        </div>
+    </form>
+    <br>
+
+    <div id="board"></div>
+
+    <!-- dependencies -->
+    <script src="/webjars/jquery/jquery.min.js"></script>
+    <script src="/webjars/sockjs-client/sockjs.min.js"></script>
+    <script src="/webjars/stomp-websocket/stomp.min.js"></script>
+    <script src="js/chess.min.js"></script>
+    <script src="js/chessboard.min.js"></script>
+
+    <!-- client app-->
+    <script src="js/main.js"></script>
+
+
+</div>
+</body>
+</html>
